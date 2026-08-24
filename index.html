@@ -1041,7 +1041,7 @@
         <div class="skill-icon">🐳</div>
         <div class="skill-category">Containers</div>
         <div class="skill-name">Containerization & Orchestration</div>
-        <div class="skill-tags"><span class="tag">Docker</span><span class="tag">Kubernetes (AKS)</span><span
+        <div class="skill-tags"><span class="tag">Docker</span><span class="tag">Kubernetes </span><span
             class="tag">Docker Compose</span></div>
       </div>
 
@@ -1100,36 +1100,82 @@
       <!-- Project 1 -->
       <div class="project-card">
         <div class="project-header">
-          <div class="project-icon-box">🚗</div>
+          <div class="project-icon-box">☁️</div>
           <div class="project-meta">
-            <div class="project-name">Automobile Manufacturing App — CI/CD Pipeline with Terraform & AWS</div>
+            <div class="project-name">AI Cloud Cost Detective — AI-Assisted Azure Cost Optimization Tool</div>
           </div>
         </div>
 
         <div class="project-details">
-          <div class="project-subtitle" style="margin-bottom: 16px;">Flask · AWS (EC2, RDS, ALB, VPC, IAM, S3, DynamoDB) · Terraform · GitHub Actions</div>
+          <div class="project-subtitle" style="margin-bottom: 16px;">React · TypeScript · Vite · Tailwind CSS · Python (FastAPI) · Azure CLI · JWT Auth · WebSocket · Gemini 2.5 Flash</div>
 
           <ul class="project-bullets">
-            <li>Designed and deployed a 2-tier AWS architecture (ALB → EC2 + RDS MySQL) inside a custom VPC across public and private subnets to enforce network isolation while hosting a Flask/Gunicorn application.</li>
-            <li>Configured Application Load Balancer health checks and tier-specific security groups for ALB, EC2, and RDS following least-privilege access principles.</li>
-            <li>Authored a 6-module Terraform codebase covering network, security, IAM, database, ALB, and compute layers with S3 remote state and DynamoDB state locking for safe, repeatable infrastructure automation.</li>
-            <li>Built a 6-stage GitHub Actions CI/CD pipeline for build, pytest coverage, Terraform plan, manual approval gate, Terraform apply, and SSH-based deployment with a health check, while managing all secrets through GitHub encrypted secrets.</li>
+            <li>Built a full-stack tool that connects to the Azure CLI to scan any resource group and audit cloud spend, detecting over-provisioned VMs, idle resources, misconfigurations, and storage waste.</li>
+            <li>Integrated Gemini 2.5 Flash to analyze scanned resource data and generate a severity-ranked (high/medium/low) report with copy-paste az CLI fix commands and estimated monthly savings.</li>
+            <li>Developed a Python FastAPI backend with custom JWT authentication and WebSocket-based live progress tracking, paired with a React, TypeScript, and Tailwind CSS frontend for a complete auth-to-UI workflow.</li>
           </ul>
 
           <div class="project-tech">
-            <span class="tech-tag">Flask</span><span class="tech-tag">AWS</span><span class="tech-tag">Terraform</span><span class="tech-tag">GitHub Actions</span><span class="tech-tag">EC2</span><span class="tech-tag">RDS</span><span class="tech-tag">ALB</span><span class="tech-tag">VPC</span><span class="tech-tag">IAM</span><span class="tech-tag">S3</span><span class="tech-tag">DynamoDB</span><span class="tech-tag">MySQL</span>
+            <span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Vite</span><span class="tech-tag">Tailwind CSS</span><span class="tech-tag">FastAPI</span><span class="tech-tag">Python</span><span class="tech-tag">Azure CLI</span><span class="tech-tag">JWT</span><span class="tech-tag">WebSocket</span><span class="tech-tag">Gemini 2.5 Flash</span>
           </div>
 
           <div class="project-links">
             <span class="links-label">GitHub Repository:</span>
             <div class="project-links-grid">
-              <a href="https://github.com/gowthamsaikadali/Automobile-Manufacturing-App-CI-CD-Pipeline-with-Terraform-AWS.git"
+              <a href="https://github.com/gowthamsaikadali/AI-Cloud-Cost-Detective.git" target="_blank" class="project-link-btn">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                <span>AI-Cloud-Cost-Detective</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-actions">
+          <button class="btn-toggle-details" onclick="toggleDetails(this)">
+            <span>Show Details</span>
+            <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon-box">🚗</div>
+          <div class="project-meta">
+            <div class="project-name">Automobile Manufacturing Dashboard — End-to-End DevSecOps Platform on AWS EKS</div>
+          </div>
+        </div>
+
+        <div class="project-details">
+          <div class="project-subtitle" style="margin-bottom: 16px;">Flask · MySQL (RDS) · Terraform · Docker · Kubernetes (EKS) · Helm · GitHub Actions · SonarQube · Trivy · Prometheus/Grafana/Loki</div>
+
+          <ul class="project-bullets">
+            <li>Designed and provisioned a production-style AWS environment (VPC, EKS, RDS, ECR) using 6+ modular Terraform stacks with S3/DynamoDB remote state, migrating the application from manual EC2 deployment to containerized microservices on Kubernetes with Helm and ALB Ingress.</li>
+            <li>Built a DevSecOps CI/CD pipeline in GitHub Actions with SonarQube static analysis and Trivy vulnerability scanning as blocking security gates, automating ECR image build/push and Helm-based deployment.</li>
+            <li>Hardened the platform end-to-end with IAM least-privilege roles, AWS WAFv2 (SQLi/XSS protection), Kubernetes NetworkPolicies and RBAC, and credential security via AWS Secrets Manager.</li>
+            <li>Implemented a full observability stack (Prometheus, Grafana, Loki) with custom dashboards and CloudWatch alarms, validating alerting through simulated pod and node failure scenarios.</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tech-tag">Flask</span><span class="tech-tag">MySQL</span><span class="tech-tag">RDS</span><span class="tech-tag">Terraform</span><span class="tech-tag">Docker</span><span class="tech-tag">Kubernetes</span><span class="tech-tag">EKS</span><span class="tech-tag">Helm</span><span class="tech-tag">GitHub Actions</span><span class="tech-tag">SonarQube</span><span class="tech-tag">Trivy</span><span class="tech-tag">Prometheus</span><span class="tech-tag">Grafana</span><span class="tech-tag">Loki</span><span class="tech-tag">AWS</span><span class="tech-tag">WAFv2</span><span class="tech-tag">IAM</span><span class="tech-tag">Secrets Manager</span>
+          </div>
+
+          <div class="project-links">
+            <span class="links-label">GitHub Repository:</span>
+            <div class="project-links-grid">
+              <a href="https://github.com/gowthamsaikadali/Automobile-Manufacturing-Dashboard-Prometheus-Grafana-Monitoring.git"
                 target="_blank" class="project-link-btn">
                 <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
                   <path
                     d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
                 </svg>
-                <span>Automobile-Manufacturing-App-CI-CD-Pipeline-with-Terraform-AWS</span>
+                <span>Automobile-Manufacturing-Dashboard-Prometheus-Grafana-Monitoring</span>
               </a>
             </div>
           </div>
@@ -1418,7 +1464,6 @@
           </button>
         </div>
       </div>
-
 
     </div>
   </section>
